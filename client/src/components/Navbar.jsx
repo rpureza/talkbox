@@ -17,10 +17,13 @@ const Navbar = () => {
         {user ? (
           <>
             <span style={styles.username}>👤 {user.username}</span>
+            <Link to="/dashboard" style={styles.link}>Dashboard</Link>
+            <Link to="/pricing" style={styles.link}>Pricing</Link>
             <button onClick={handleLogout} style={styles.button}>Logout</button>
           </>
         ) : (
           <>
+            <Link to="/pricing" style={styles.link}>Pricing</Link>
             <Link to="/login" style={styles.link}>Login</Link>
             <Link to="/register" style={styles.link}>Register</Link>
           </>
@@ -39,7 +42,7 @@ const styles = {
     color: "white", textDecoration: "none", fontSize: "1.5rem", fontWeight: "bold",
   },
   links: { display: "flex", alignItems: "center", gap: "1rem" },
-  link: { color: "white", textDecoration: "none" },
+  link: { color: "white", textDecoration: "none", fontSize: "14px" },
   username: { color: "#a0a0b0", fontSize: "0.9rem" },
   button: {
     backgroundColor: "#e94560", color: "white", border: "none",
