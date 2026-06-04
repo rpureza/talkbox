@@ -28,7 +28,7 @@ app.use("/auth", authRoutes);
 app.use("/rooms", roomRoutes);
 app.use("/messages", messageRoutes);
 app.use("/subscriptions", subscriptionRoutes);
-app.use("/billing", billingRoutes);cls
+app.use("/billing", billingRoutes);
 
 app.use("/auth", authRoutes);
 app.use("/rooms", roomRoutes);
