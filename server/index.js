@@ -21,6 +21,14 @@ app.use(express.json());
 const authRoutes = require("./routes/auth");
 const roomRoutes = require("./routes/rooms");
 const messageRoutes = require("./routes/messages");
+const subscriptionRoutes = require("./routes/subscriptions");
+const billingRoutes = require("./routes/billing");
+
+app.use("/auth", authRoutes);
+app.use("/rooms", roomRoutes);
+app.use("/messages", messageRoutes);
+app.use("/subscriptions", subscriptionRoutes);
+app.use("/billing", billingRoutes);cls
 
 app.use("/auth", authRoutes);
 app.use("/rooms", roomRoutes);
